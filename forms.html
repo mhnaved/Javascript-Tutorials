@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Validation</title>
+
+
+    
+</head>
+<body>
+
+    <form action="">
+
+        <label for="name">First Name:</label>
+        <input id="fname" type="text" placeholder="First Name"> <br>
+        
+    <div>
+        <label for="name">Last Name:</label>
+        <input id="lname" type="text" placeholder="Last Name">
+    </div> <br>
+
+    <button onclick="validate()" type="submit">Submit</button>
+    <span id="message"></span> 
+    </form>
+   
+    <!-- <button id="submit" >Button</button> -->
+    <!-- <button id="submitForm">Submit</button> -->
+    <!-- <button onclick="setTimeout(jmi,0000);">Submit </button> -->
+    <!-- <button onclick="jmi()">Submit </button> --> 
+   
+    
+
+
+    <script>
+//  $("#submitForm").click(function() {
+//    alert("The Form has been Submitted.");
+// });
+
+
+// function jmi(){
+//     alert("please check there is error.");
+// }
+
+function validate()
+{
+    var firstname = document.getElementById("fname");
+    var lastname = document.getElementById("lname");
+    if(firstname.value =="" || lastname.value =="")
+    {
+        alert("No blank values allowed");
+    }
+    else
+    {
+       document.getElementById("message").innerHTML = "Form Submitted";  
+       
+    }
+}
+    </script>
+    
+ 
+</body>
+</html>
+
+
+
+
+
+

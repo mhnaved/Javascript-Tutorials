@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <form onsubmit="return myFunc()">
+        UserName : <input type="text" id="User_Name" value="">
+        <span id="Message"></span> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        
+        function myFunc() {
+            var correct_way = /^ [A-Za-z] +$/;
+        var a = document.getElementById("User_Name").value;
+        
+        if(a==""){
+            document.getElementById("Message").innerHTML="** Please fill username";
+            return false;
+        }
+        if(a.length<3){
+            document.getElementById("Message").innerHTML="** username must be 3character";
+            return false;
+        }
+        if(a.length>20){
+            document.getElementById("Message").innerHTML="** username must be less than 20 character";
+            return false;
+        }
+        if(a.match(correct_way))
+        true;
+        else{
+            document.getElementById("Message").innerHTML="** only alphabets are allowed";
+            return false; 
+        }
+        }
+            </script>
+    
+</body>
+</html>
+
+
+
+<!-- Practice Spot -->
+
+<!-- var a = document.getElementById("User_Name").value;
+var correct_way = /^[A-Za-z]+$/;
+if(a==""){
+    document.getElementById("message").innerHTML="** Please fill username";
+    return false;
+}
+if(a.length<3){
+    document.getElementById("message").innerHTML="** character must be greater than three.";
+    return false;
+}
+if(a.match(correct_way))
+true;
+else{
+    document.getElementById("message").innerHTML="** Only alphabets are allowed.";
+    return false;
+} 
+}
+
+<form onsubmit="return myfunc()">
+Username : <input type="text" id="username" value="">
+<span id="message"></span> <br>
+<input type="submit" value="Submit">
+</form> -->

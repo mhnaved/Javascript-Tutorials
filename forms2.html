@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+  <label for="nmme">First Name</label>
+  <input id="fname" type="text"> <br>
+  <label for="nmme">Last Name</label>
+  <input id="lname" type="text"><br>
+  <label for="dob">DOB</label>
+  <input id="dob" type="date"> <br>
+  <label for="country">Country</label>
+  <select name="country" id="country">
+    <option value="India">India</option>
+    <option value="Nepal">Nepal</option>
+    <option value="Bangladesh">Bangladesh</option>
+  </select> <br>
+  <label for="state">State</label>
+  <select name="state" id="state">
+    <option value="UttarPradesh">UttarPradesh</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Uttrakhand">Uttrakhand</option>
+  </select> <br>
+  <label for="gender">Gender :</label>
+  <label for="male">male</label>
+  <input type="radio" value="male">
+  <label for="female">female</label>
+  <input type="radio"> <br>
+  <button onclick="print()" type="submit">Submit</button>
+
+
+  <script>
+    
+    function print() {
+alert("Hello my name is xyz and i am xx year old.")
+    }
+  </script>
+</body>
+</html>
